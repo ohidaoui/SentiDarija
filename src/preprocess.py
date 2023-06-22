@@ -5,7 +5,7 @@ from pyarabic.araby import strip_tatweel, strip_tashkeel
 
 
 
-def identify_tweet_language(df):
+def identify_tweet_language(df, src_field='review'):
     """
     Takes a DataFrame with a 'tweet' column and adds a new 'language' column 
     that identifies whether each tweet is written in Arabic letters or Arabizi.
@@ -22,7 +22,7 @@ def identify_tweet_language(df):
             return 'Unknown'
         
     new_df = df.copy()
-    new_df['language'] = df['tweet'].apply(identify_language)
+    new_df['language'] = df[src_field].apply(identify_language)
     return new_df
 
 def normalize_arabizi(text: str, normalize_dict: dict):
