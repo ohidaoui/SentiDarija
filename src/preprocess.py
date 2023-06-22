@@ -42,6 +42,7 @@ def preprocess(src_df, source, field, d, arabizi=True):
 
     df = src_df.copy()
     df[field] = df[source].copy()
+    df[field] = df[field].str.lower()
     
     df.drop_duplicates(subset=[field], inplace=True)
     # Replace URLs with URL string
