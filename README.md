@@ -1,5 +1,5 @@
 # SentiDarija
-Polarity classification for products and services reviews written in Darija.
+**Polarity classification for products and services reviews written in Darija.**
 
 The project aims to develop a sentiment analysis system specifically designed for analyzing product and services reviews written in Darija, the Moroccan dialect, supporting Arabic & Arabizi writing styles. The goal is to provide businesses operating in Morocco with valuable insights into customer sentiments and opinions.
 
